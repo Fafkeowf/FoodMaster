@@ -1,0 +1,93 @@
+колла
+молоко
+ряженка
+квас
+сок
+
+спашетти
+кур. в духовке
+салат
+жареная картошка
+рамен
+греча
+рис
+пюре
+плов
+борщь
+гороховый суп
+уха
+рыба
+окрошка
+бигус
+питца
+пирог
+зпеканка
+тушеная картошка
+селедка под шубой
+
+сэндвич
+шпроты
+хлопья
+тарталетки с мясом
+нагетсы
+самса
+гренки
+
+сосисоны
+курица
+свинина
+катлеты
+рыба
+калбаса
+нагетсы
+селедка
+
+-----------------------
+
+-- beverages
+call
+milk
+ryzenka
+kvass
+juice
+
+-- main_dishes
+spaschetti
+chicken_forge
+salad
+fried_potatoes
+ramen
+buckwheat
+rice
+mashed_potatoes
+pilaf
+borscht
+pea_soup
+ear
+fish
+okroshka
+bigus
+pitcher
+pie
+сake
+stewed_potatoes
+fur_coat
+
+-- next_day
+sandwich
+sprats
+flakes
+meat_tartlets
+nuggets
+samsa
+toast
+
+-- garnish
+sausages
+hen
+pork
+catlets
+fish
+kalbasa
+nuggets
+Herring
