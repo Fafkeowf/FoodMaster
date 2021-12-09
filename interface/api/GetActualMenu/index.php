@@ -1,6 +1,6 @@
 <?php
 
-$init_data = json_decode(file_get_contents('php://input'));
+$init_data = file_get_contents('php://input');
 
 
 header('Content-type: application/json; charset=utf-8');
@@ -12,8 +12,6 @@ $Login = "mysql";
 $Pass = "mysql";
 $DataBase = "food";
 $Table = "current_menu";
-
-#print_r(json_encode(array("test" => 'test_test')));
 
 
 echo ShowData_BD($Ip, $Login, $Pass, $DataBase, $Table);
