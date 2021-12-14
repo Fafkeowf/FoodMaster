@@ -5,8 +5,7 @@
  */
 
 
-include 'D:\JoJo\GlobaLibs\php\lib.php';
-
+require_once '../lib/lib.php';
 
 
 $list_element = array(

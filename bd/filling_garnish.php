@@ -4,7 +4,7 @@
  * Добавление данных в таблицу garnish (гарниры)
  */
 
-include 'D:\JoJo\GlobaLibs\php\lib.php';
+require_once '../lib/lib.php';
 
 // IN DATA
 $list_element = array(
