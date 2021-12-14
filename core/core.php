@@ -4,6 +4,8 @@
  * Генерирование полного основного меню и наполнение им таблицы 'current_menu'
  */
 
+/*test IDE git*/
+
 require_once 'modules/menu/association/association.php';
 
 require_once '../lib/lib.php';
