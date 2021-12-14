@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Добавление данных в таблицу beverages (напитки)
+ */
+
 include 'D:\JoJo\GlobaLibs\php\lib.php';
 
 // IN DATA

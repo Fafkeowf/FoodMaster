@@ -1,8 +1,22 @@
 <?php
 
-include 'D:\JoJo\GlobaLibs\php\lib.php';
+/**
+ * Модуль формирования списка напитков
+ * */
 
 
+/**
+ * Функция генерирования списка напитков на определенный периуд
+ *
+ * @param string $Ip - ip аддресс БД
+ * @param string $Login - логин учетной записи БД
+ * @param string $Pass - парол учетной записи БД
+ * @param string $DataBase - название БД
+ * @param string $Table - название таблицы с которой будет производиться работа
+ * @param string $day - колличество дней на которое будет составлен список напитков
+ *
+ * @return array
+ */
 function beverages($Ip, $Login, $Pass, $DataBase, $Table, $day){
 
 

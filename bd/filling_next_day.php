@@ -1,6 +1,11 @@
 <?php
 
-include 'D:\JoJo\GlobaLibs\php\lib.php';
+/**
+ * Добавление данных в таблицу next_day (блюда из категории *на завтра*)
+ */
+
+
+require_once '../lib/lib.php';
 
 // IN DATA
 $list_element = array(

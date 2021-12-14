@@ -1,6 +1,16 @@
 <?php
 
-include "includes.php";
+/**
+ * Генерирование полного основного меню и наполнение им таблицы 'current_menu'
+ */
+
+require_once 'modules/menu/association/association.php';
+
+require_once '../lib/lib.php';
+
+require_once 'modules/menu/beverages/beverages.php';
+require_once 'modules/menu/main_dishes/main_dishes.php';
+require_once 'modules/menu/next_day/next_day.php';
 
 
 $Ip        = "localhost";

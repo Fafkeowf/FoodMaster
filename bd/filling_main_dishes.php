@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Добавление данных в таблицу main_dishes (основные блюда)
+ */
+
 include 'D:\JoJo\GlobaLibs\php\lib.php';
 
 // IN DATA

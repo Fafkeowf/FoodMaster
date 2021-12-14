@@ -1,10 +1,31 @@
 <?php
 
+/**
+ * Модуль формирования списка основных блюд
+ * */
+
+/**
+ * Функция удаления всех данных из таблицы
+ *
+ * @param mysqli|false $DataBase - коннектор mysql конкретной БД
+ * @param string $Table - название таблицы
+ *
+ * @return mysqli|false
+ */
 function Delete_DataTable_($DataBase, $Table) {
     return mysqli_query($DataBase, "TRUNCATE TABLE ".$Table);
 }
 
-
+/**
+ * Функция формирования sql запроса на вставку нескольких строк
+ *
+ * @param mysqli|false $DataBase - коннектор mysql
+ * @param string $Table - название таблицы
+ * @param string $column - название колонки в которую произведется вставка строк
+ * @param array $list - перечень данных для формирования строк
+ *
+ * @return string
+ */
 function add_wholesale_($Table, $column, $list){
     $res = '';
     foreach ($list as $value){
@@ -14,7 +35,18 @@ function add_wholesale_($Table, $column, $list){
     return "INSERT INTO ".$Table." (".$column.") VALUES ".$res;
 }
 
-
+/**
+ * Функция генерирования списка напитков на определенный периуд
+ *
+ * @param string $Ip - ip аддресс БД
+ * @param string $Login - логин учетной записи БД
+ * @param string $Pass - парол учетной записи БД
+ * @param string $DataBase - название БД
+ * @param string $Table - название таблицы с которой будет производиться работа
+ * @param string $day - колличество дней на которое будет составлен список из основных блюд
+ *
+ * @return array
+ */
 function main_dishes($Ip, $Login, $Pass, $DataBase, $Table, $day){
 
     $Init_DataBase = mysqli_connect($Ip, $Login, $Pass, $DataBase);
@@ -227,3 +259,21 @@ function main_dishes($Ip, $Login, $Pass, $DataBase, $Table, $day){
 // ---------------------------------------------------------------------------------------------------------------------
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

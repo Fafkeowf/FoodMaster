@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Добавление данных в таблицу garnish (гарниры)
+ */
+
 include 'D:\JoJo\GlobaLibs\php\lib.php';
 
 // IN DATA

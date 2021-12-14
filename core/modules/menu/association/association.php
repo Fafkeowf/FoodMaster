@@ -1,8 +1,20 @@
 <?php
 
+/**
+ * Модуль ассоциирования основных блюд с определенным гарнироми
+ * */
 
-
-
+/**
+ * Функция проведения ассоциирования
+ *
+ * @param string $Ip - ip аддресс БД
+ * @param string $Login - логин учетной записи БД
+ * @param string $Pass - парол учетной записи БД
+ * @param string $DataBase - название БД
+ * @param string $main_dishes - название таблицы с которой будет производиться работа
+ *
+ * @return array
+ * */
 function association($Ip, $Login, $Pass, $DataBase, $main_dishes){
 
     $Init_DataBase = mysqli_connect($Ip, $Login, $Pass, $DataBase);

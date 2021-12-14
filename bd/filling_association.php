@@ -1,8 +1,14 @@
 <?php
 
+/**
+ * Добавление данных в таблицу ассоциации основного блюда и гарниров к ним
+ */
+
+
 include 'D:\JoJo\GlobaLibs\php\lib.php';
 
-// IN DATA
+
+
 $list_element = array(
     "1,2,3,4,6,7",
     "9",
@@ -26,35 +32,31 @@ $list_element = array(
     "1,5,6,7,8"
 );
 
-// ---------------------------------------------------------------------------------------------------------------------
 
-$Ip        = "localhost";
-$Login     = "mysql";
-$Pass      = "mysql";
-$DataBase  = "food";
-$Table     = 'association';
-
-// ---------------------------------------------------------------------------------------------------------------------
+$Ip       = "localhost";
+$Login    = "mysql";
+$Pass     = "mysql";
+$DataBase = "food";
+$Table    = "association";
 
 
 $Init_DataBase = Init_DataBase($Ip, $Login, $Pass, $DataBase);
 
-$column = 'garnishs';
-$Query = add_wholesale($Table, $column, $list_element);
-print_r($Query.PHP_EOL);
+
+$Query = add_wholesale($Table, 'garnishs', $list_element);
+
 
 AddData_DataTable($Init_DataBase, $Query);
 
-$see = Get_DataTable($Init_DataBase, $Table);
-$res = json_decode($see);
+
+$res = json_decode(Get_DataTable($Init_DataBase, $Table));
+
+
 foreach ($res as $value){
     print_r($value);
 }
-print_r(PHP_EOL.'GOOD ?');
 
-
-
-
+// ---------------------------------------------------------------------------------------------------------------------
 
 
 
