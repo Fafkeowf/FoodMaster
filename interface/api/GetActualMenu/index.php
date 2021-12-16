@@ -10,9 +10,9 @@ header('Content-type: application/json; charset=utf-8');
 
 require_once '../../../lib/ShowData_BD.php';
 
-$Ip = "localhost";
-$Login = "mysql";
-$Pass = "mysql";
+$Ip        = "mysql";
+$Login     = "root";
+$Pass      = "12345";
 $DataBase = "food";
 $Table = "current_menu";
 

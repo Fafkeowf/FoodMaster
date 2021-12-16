@@ -4,7 +4,19 @@
 
 FROM php:7.4-apache
 COPY ./index.php /var/www/html
-EXPOSE 8000
-RUN apt-get update && apt-get upgrade && apt-get -y install mariadb-server-10.5
-ENTRYPOINT ["service", "mariadb", "start", "&"]
+RUN apt-get update && apt-get install -y \
+        curl \
+        wget \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+  libpng-dev \
+  libonig-dev \
+  libzip-dev \
+  libmcrypt-dev \
+        && pecl install mcrypt-1.0.3 \
+  && docker-php-ext-enable mcrypt \
+        && docker-php-ext-install -j$(nproc) iconv mbstring mysqli pdo_mysql zip \
+  && docker-php-ext-configure gd --with-freetype --with-jpeg \
+        && docker-php-ext-install -j$(nproc) gd
+
 

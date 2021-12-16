@@ -20,9 +20,9 @@ $list_element = array(
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-$Ip        = "localhost";
-$Login     = "mysql";
-$Pass      = "mysql";
+$Ip        = "mysql";
+$Login     = "root";
+$Pass      = "12345";
 $DataBase  = "food";
 $Table     = 'next_day';
 
