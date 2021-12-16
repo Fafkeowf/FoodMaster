@@ -6,13 +6,13 @@
 
 /*test IDE git*/
 
-require_once 'modules/menu/association/association.php';
+require_once 'core/modules/menu/association/association.php';
 
-require_once '../lib/lib.php';
+require_once 'lib/lib.php';
 
-require_once 'modules/menu/beverages/beverages.php';
-require_once 'modules/menu/main_dishes/main_dishes.php';
-require_once 'modules/menu/next_day/next_day.php';
+require_once 'core/modules/menu/beverages/beverages.php';
+require_once 'core/modules/menu/main_dishes/main_dishes.php';
+require_once 'core/modules/menu/next_day/next_day.php';
 
 
 $Ip        = "mysql";
